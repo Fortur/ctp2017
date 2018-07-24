@@ -1,0 +1,253 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+ center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+@font-face {
+    font-family: Stolzl-Light;
+    src: url(../fonts/ProximaNovaCond-Regular.ttf) format('truetype');;
+}
+body {
+    font-family: "Stolzl-Light";
+    line-height: 1;
+    min-width: 1426px;
+
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+h1, h2, h3{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 204px;
+    box-shadow: 1px 8px 17px #cacaca;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    height: 102px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+}
+header b{
+    font-weight: bold;
+    font-size: x-large;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 329px;
+    height: 102px;
+}
+.right .top-line{
+    display: flex;
+    align-items: center;
+    color: #1a80c1;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 15px;
+
+}
+.right .number{
+    color: #25bfe9;
+    font-size: 44px;
+    letter-spacing: 6px;
+    width: 120px;
+    display: block;
+}
+.right .bottom-line{
+    display: flex;
+    color: #bcbec0;
+    margin-top: 10px;
+}
+.right .language{
+    width: 120px;
+}
+.right .active{
+    color: #2b3979;
+}
+.right button{
+    background: url("../images/search.png") no-repeat center center, transparent;
+    border: none;
+    width: 10px;
+    height: 10px;
+}
+.right input{
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+    width: 109px;
+    padding-left: 6px;
+}
+::-webkit-input-placeholder {color:black;}
+::-moz-placeholder          {color:black;}/* Firefox 19+ */
+:-moz-placeholder           {color:black;}/* Firefox 18- */
+:-ms-input-placeholder      {color:black;}
+
+
+
+.content{
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    background: url("../images/background.png") no-repeat fixed ;
+    background-size: cover;
+}
+.main-content{
+    width: calc(100vw - 655px);
+    padding: 50px;
+    min-width: 900px;
+    font-size: 22px;
+    background: white;
+    margin-bottom: 10px;
+}
+.main-content h1{
+    font-size: 26px;
+
+}
+.main-content h2{
+    font-size: 24px;
+
+}
+.main-content p{
+    margin-bottom: 15px;
+    text-indent: 25px;
+    text-align: justify;
+}
+
+.main-content p img{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+ol li{
+    list-style-type: none;
+    margin: 15px 50px;
+}
+ul li{
+    margin: 15px 50px;
+    list-style-type: disc;
+}
+.romans li{
+    font-weight: bold;
+    list-style-type: upper-roman;
+    margin: 15px 70px;
+}
+.decimal li{
+    list-style-type: decimal;
+}
+.smaller{
+    font-size: smaller;
+}
+.main-content  a{
+    color: #1a80c1;
+    text-decoration: underline;
+}
+table{
+    font-size: 20px !important;
+}
+td{
+    vertical-align: middle !important;
+    text-align: justify;
+
+}
+
+footer{
+    box-shadow: 0px 0px 17px #cacaca;
+    width: 100%;
+}
+
+.partners{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    color: #416590;
+    font-weight: bold;
+}
+
+center{
+    width: calc( 100vw - 625px );
+    min-width: 880px;
+    overflow-x: scroll;
+}
+center p{
+    text-align: center !important;
+    margin: 0;
+    text-indent: 0 !important;
+}
+
+
+li{
+    text-align:justify;
+}
+
+
+
+.black-bord tr, .black-bord td, .black-bord th{
+    border: 1px solid black;
+    text-align: center;
+    padding-left: 0.18cm;
+    padding-right: 0.19cm;
+}
+
+.black-bord th {
+    font-weight: bold;
+    vertical-align: middle;
+} 
+
+.hidden-y{
+    overflow-y: hidden;
+}

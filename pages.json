@@ -1,0 +1,146 @@
+{
+  "pages": {
+    "about": {
+      "prev": "zaver",
+      "next": "about_rrs"
+    },
+    "about_rrs": {
+      "prev": "about",
+      "next": "apply"
+    },
+    "apply": {
+      "prev": "about_rrs",
+      "next": "aspects"
+    },
+    "aspects": {
+      "prev": "apply",
+      "next": "business_model"
+    },
+    "business_model": {
+      "prev": "aspects",
+      "next": "conclusions"
+    },
+    "conclusions": {
+      "prev": "business_model",
+      "next": "corp"
+    },
+    "corp": {
+      "prev": "conclusions",
+      "next": "corp_transp"
+    },
+    "corp_transp": {
+      "prev": "corp",
+      "next": "corp_transp_list"
+    },
+    "corp_transp_list": {
+      "prev": "corp_transp",
+      "next": "corrup"
+    },
+    "corrup": {
+      "prev": "corp_transp_list",
+      "next": "development"
+    },
+    "development": {
+      "prev": "corrup",
+      "next": "disclosure"
+    },
+    "disclosure": {
+      "prev": "development",
+      "next": "search_page"
+    },
+    "easyment": {
+      "prev": "disclosure",
+      "next": "experts"
+    },
+    "experts": {
+      "prev": "easyment",
+      "next": "features"
+    },
+    "features": {
+      "prev": "experts",
+      "next": "iii"
+    },
+    "iii": {
+      "prev": "features",
+      "next": "iii2"
+    },
+    "iii2": {
+      "prev": "iii",
+      "next": "index"
+    },
+    "index": {
+      "prev": "iii2",
+      "next": "int"
+    },
+    "int": {
+      "prev": "index",
+      "next": "keys_report"
+    },
+    "keys_report": {
+      "prev": "int",
+      "next": "keys_transp"
+    },
+    "keys_transp": {
+      "prev": "keys_report",
+      "next": "lead"
+    },
+    "lead": {
+      "prev": "keys_transp",
+      "next": "mechs"
+    },
+    "mechs": {
+      "prev": "lead",
+      "next": "purchase"
+    },
+    "purchase": {
+      "prev": "mechs",
+      "next": "report_period"
+    },
+    "report_period": {
+      "prev": "purchase",
+      "next": "state"
+    },
+    "state": {
+      "prev": "report_period",
+      "next": "steps"
+    },
+    "steps": {
+      "prev": "state",
+      "next": "subs"
+    },
+    "subs": {
+      "prev": "steps",
+      "next": "system"
+    },
+    "system": {
+      "prev": "subs",
+      "next": "system_way"
+    },
+    "system_way": {
+      "prev": "system",
+      "next": "table1"
+    },
+    "table1": {
+      "prev": "system_way",
+      "next": "table2"
+    },
+    "table2": {
+      "prev": "table1",
+      "next": "transp_sectors"
+    },
+    "transp_sectors": {
+      "prev": "table2",
+      "next": "transp_with_difference"
+    },
+    "transp_with_difference": {
+      "prev": "transp_sectors",
+      "next": "zaver"
+    },
+    "zaver": {
+      "title_ru": "Интерактивная аналитика",
+      "title_en": "Interactive analytics",
+      "prev": "transp_with_difference",
+      "next": "about"
+    }
+  }
+}

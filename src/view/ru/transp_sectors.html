@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Состояние корпоративной прозрачности</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../js/ru/diagrams/morris.css">
+</head>
+<body>
+<header></header>
+
+<div class="content">
+    <div class="menu"></div>
+
+    <div class="main-content">
+        <input type="hidden" value="transp-sectors" id="sub">
+        <h2 id="transp-sectors">Корпоративная прозрачность различных секторов экономики РФ</h2>
+        <h3>Коэффициент прозрачности</h3>
+        <p>
+            Для оценки и сравнения прозрачности компаний, объединенных в разные группы по какому-либо признаку, введен Коэффициент прозрачности. Формула расчета Коэффициента прозрачности<br>
+            <img src="../images/transp_kf.png" alt="" align="center">
+            , где i –уровни прозрачности от Premium до V; xi – количество компаний на соответствующем уровне прозрачности; 1 ≤ K ≤ 6.
+        </p>
+        <p>
+            Коэффициент позволяет сравнивать, например, прозрачность компаний одного сектора экономики с прозрачностью компаний другого сектора экономики, прозрачность компаний листингуемых на биржах с прозрачностью нелистингуемых компаний и пр.
+        </p>
+        <h3>Прозрачность секторов экономики по компаниям</h3>
+        <div id="transp-econom-sectors"></div>
+        <p class="smaller">Справочно: данные представлены на основе приведенной выборки 2017 года (956 компаний), коэффициент рассчитан по текущей методике.</p>
+        <h3>Выводы:</h3>
+        <ol>
+            <li>
+                <b>Лидером прозрачности среди секторов экономики остается «Атомная промышленность»: коэффициент прозрачности составляет 3,7.</b>
+                На уровне международных практик и их лидеров (I и Premium уровни прозрачности) находятся 2 (на I уровне прозрачности) и 3 компании (на Premium) из 20 обследованных в 2017 году компаний атомного сектора. Ключевой механизм, обеспечивший компаниям атомного сектора абсолютное лидерство в «межсекторальном соревновании» за корпоративную прозрачность – это отраслевая система публичной отчетности, созданная и развиваемая с 2009 года.
+            </li>
+            <li>
+                <b>Среди обследованных секторов экономики в 2017 году не было выявлено ни одного, кроме «Атомной промышленности», с коэффициентом прозрачности в высоком диапазоне (от 2,8 до 3,7).</b>
+                То есть, отсутствуют сектора экономики, в которых была бы существенная доля компаний, раскрывающих публичную отчетную информацию в соответствии с международными стандартами. Такое состояние прозрачности секторов экономики, скорее всего, объясняется тем, что в них не созданы системные отраслевые механизмы (как в атомном секторе), стимулирующие компании становиться более прозрачными и раскрывать отчетную информацию в соответствии с международными требованиями.
+            </li>
+            <li>
+                <b>Наиболее распространенным остается средний диапазон (11 из 30 секторов экономики) с коэффициентом прозрачности от 1,9 до 2,8.</b>
+                Лидерами в среднем диапазоне являются: «Электроэнергетический сектор», «Телекоммуникации и связь» с коэффициентами прозрачности 2,67 и 2,44 соответственно.
+                <p></p>
+                <p>
+                    Среди одиннадцати обследованных крупнейших компаний сектора «Промышленность драгоценных металлов и алмазов» нет ни одной, которая раскрыла информацию на уровне международных практик с заверением (I уровень прозрачности). Однако, две компании предоставили нефинансовую отчетность, подготовленную с использованием международных стандартов отчетности (II уровень). Одна – выше требований ЦБ РФ (III уровень). Только в соответствии с требованиями ЦБ РФ (IV уровень прозрачности) раскрывают отчетную информацию 4 компании. Три компании в связи с отсутствием раскрытой информации были отнесены к V уровню прозрачности. В 2017 году одна компания опубликовала только иностранный отчет, который в соответствии с методикой исследования не был учтен.
+                </p>
+                <p>
+                    Среди 81 крупнейших компаний сектора «Электроэнергетика» в 2017 году 11 компаний оказались непрозрачными. 18 компаний были отнесены к IV уровню прозрачности (раскрыли информацию о деятельности в соответствии с требованиями ЦБ РФ). Выше требований ЦБ РФ (III уровень) выпускают отчетность 42 компании. Международные стандарты используют 6 компаний отрасли (II уровень прозрачности), а 4 компании, помимо следования международным стандартам, заверяют нефинансовую отчетность (I уровень прозрачности). Такой уровень прозрачности электроэнергетического сектора, вероятно, объясняется тем, что в период существования РАО ЕЭС (до момента завершения структурной реформы энергетики в 2008 года) в отрасли была построена и функционировала система публичной отчетности и управления нефинансовыми рисками. Наблюдаемый факт относительно высокой и в целом растущей прозрачности компаний электроэнергетического сектора – это «отголоски» того проекта.
+                </p>
+            </li>
+            <li>
+                <b>Большинство секторов экономики РФ продолжают быть непрозрачными. 19 секторов экономики РФ имеют коэффициент прозрачности в низком диапазоне от 1,00 до 1,9.</b>
+                Наименее прозрачными секторами экономики РФ являются: «СМИ», «Табачная промышленность», «Легкая промышленность», «Наука», «Полиграфическая промышленность» – у этих секторов коэффициент прозрачности равен единице.
+                <p></p>
+                <p>
+                    В среднем количество компаний в этих секторах экономики – попавших на V (нулевой) уровень прозрачности, составляет более 79 %, а по отдельным секторам такой процент доходит до 100 %.
+                </p>
+            </li>
+        </ol>
+        <h3>Рейтинг прозрачности секторов экономики</h3>
+        <center>
+            <table width="1028" cellpadding="7" cellspacing="0">
+                <colgroup><col width="251">
+                    <col width="71">
+                    <col width="62">
+                    <col width="43">
+                    <col width="33">
+                    <col width="43">
+                    <col width="33">
+                    <col width="43">
+                    <col width="24">
+                    <col width="43">
+                    <col width="33">
+                    <col width="4355">
+                    <col width="43">
+                    <col width="24">
+                    <col width="4355">
+                    <col width="43">
+                    <col width="30">
+                </colgroup><tbody><tr>
+                <td rowspan="2" width="251" bgcolor="#ffffff" style="border-top: 1.00pt solid #00000a; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Сектор экономики
+                    </p>
+                </td>
+                <td rowspan="2" width="71" bgcolor="#ffffff" style="border-top: 1.00pt solid #00000a; border-bottom: 1px solid #00000a; border-left: 1px solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Коэффициент прозрачности за 2016 год</p>
+                </td>
+                <td rowspan="2" width="62" bgcolor="#ffffff" style="border-top: 1.00pt solid #00000a; border-bottom: 1px solid #00000a; border-left: 1px solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Количество компаний, представляющих
+                        сектора в 2016 году</p>
+                </td>
+                <td colspan="2" width="90" bgcolor="#ffffff" style="border-top: 1.00pt solid #00000a; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>Количество компаний на Premium уровне</p>
+                </td>
+                <td colspan="2" width="90" bgcolor="#ffffff" style="border-top: 1.00pt solid #00000a; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>Количество компаний на I уровне</p>
+                </td>
+                <td colspan="2" width="80" bgcolor="#ffffff" style="border-top: 1.00pt solid #00000a; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>Количество компаний на II уровне</p>
+                </td>
+                <td colspan="2" width="90" bgcolor="#ffffff" style="border-top: 1.00pt solid #00000a; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>Количество компаний на III уровне</p>
+                </td>
+                <td colspan="3" width="80" bgcolor="#ffffff" style="border-top: 1.00pt solid #00000a; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>Количество компаний на IV уровне
+                    </p>
+                </td>
+                <td colspan="3" width="87" bgcolor="#ffffff" style="border-top: 1.00pt solid #00000a; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #000001; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>Количество компаний на V уровне</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="43" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>В % от общего количества</p>
+                </td>
+                <td width="33" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>Абс. Знач.</p>
+                </td>
+                <td width="43" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>В % от общего количества</p>
+                </td>
+                <td width="33" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>Абс. Знач.</p>
+                </td>
+                <td width="43" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>В % от общего количества</p>
+                </td>
+                <td width="24" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>Абс. Знач.</p>
+                </td>
+                <td width="43" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>В % от общего количества</p>
+                </td>
+                <td colspan="2" width="33" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>Абс. Знач.</p>
+                </td>
+                <td width="43" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>В % от общего количества</p>
+                </td>
+                <td colspan="2" width="24" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>Абс. Знач.</p>
+                </td>
+                <td width="43" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>В % от общего количества</p>
+                </td>
+                <td width="30" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>Абс. Знач.</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Атомная промышленность
+                    </p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>3,70</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>20</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>15</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>3</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>10</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>2</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>40</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>8</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>15</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>3</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>5</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>15</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>3</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Электроэнергетика</p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>2,67</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>82</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>4,9</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>4</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>7,4</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>6</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>51,85</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>42</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>21,95</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>18</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>14,8</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>12</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Промышленность драгоценных металлов
+                        и алмазов</p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>2,20</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>12</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>20</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>2</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>10</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>40</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>4</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>30</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>3</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Химическая и нефтехимическая
+                        промышленность</p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1,93</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>28</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>3,57</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>28,57</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>8</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>25</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>7</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>42,86</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>12</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Телекоммуникации и связь</p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>2,44</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>17</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>5,56</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>11,11</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>2</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>2,78</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>4</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0,33</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>6</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>22,22</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>4</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Банки и другие инвестиционно-финансовые
+                        организации</p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>2,25</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>69</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>7,25</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>5</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>23,19</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>16</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>56,5</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>39</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>13</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>9</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Лесная, деревообрабатывающая и
+                        целлюлозно-бумажная промышленность</p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>2,00</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>8</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>42,86</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>3</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>14,28</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>42,86</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>4</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Цветная металлургия</p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>2,00</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>16</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>6,67</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>13,33</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>2</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>46,67</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>7</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>37,5</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>6</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Черная металлургия</p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>2,15</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>27</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>7,7</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>2</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>26,9</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>7</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>38,5</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>10</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>29,63</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>8</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Страхование</p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>2,08</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>12</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0,33</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>4</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>41,67</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>5</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>25</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>3</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Жилищно-коммунальное хозяйство</p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1,71</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>7</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>28,57</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>2</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>14,29</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>57,14</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>4</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Нефтяная и нефтегазовая промышленность</p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1,91</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>45</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>4,44</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>2</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>8,89</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>4</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>11,11</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>5</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>24,44</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>11</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>51,11</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>23</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Угольная промышленность</p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>2,00</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>11</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>9,1</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>9,1</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>54,5</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>6</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>27,3</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>3</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Транспорт</p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1,59</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>44</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>4,5</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>2</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>15,91</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>7</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>13,64</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>6</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>65,9</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>29</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Здравоохранение и фармацевтическая
+                        промышленность</p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1,70</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>10</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>10</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>50</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>5</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>40</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>4</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Машиностроение</p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1,72</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>102</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0,99</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>22,5</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>23</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>25,7</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>26</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>51,48</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>52</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Пищевая промышленность</p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1,53</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>38</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p><br>
+
+                    </p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>5,3</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>2</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>28,9</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>11</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>57,9</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>22</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Инжиниринг, промышленно-инфраструктурное
+                        строительство</p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1,29</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>34</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>5,88</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>2</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>17,65</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>6</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>76,5</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>26</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>СМИ</p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1,00</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>13</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>15,4</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>2</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>84,6</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>11</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Промышленность строительных
+                        материалов</p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1,14</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>7</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>14,3</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>85,7</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>6</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Строительство</p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1,31</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>35</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>2,9</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>25,7</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>9</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>71,4</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>25</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Агропромышленный комплекс
+                    </p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1,21</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>28</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>3,6</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>14,3</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>4</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>82,1</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>23</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Розничная торговля</p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1,20</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>78</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1,3</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>5,1</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>4</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>3,8</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>3</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>89,7</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>70</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Сервисные компании</p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1,24</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>17</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>5,89</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>11,76</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>2</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>82,35</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>14</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Оптовая торговля</p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1,08</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>164</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1,8</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>3</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>4,3</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>7</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>93,9</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>154</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="251" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1px solid #00000a; padding: 0cm 0.19cm">
+                    <p>Информационные технологии</p>
+                </td>
+                <td width="71" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1,07</p>
+                </td>
+                <td width="62" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>15</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td colspan="2" width="33" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>0</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>6,67</p>
+                </td>
+                <td colspan="2" width="24" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>1</p>
+                </td>
+                <td width="43" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1px solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>93,33</p>
+                </td>
+                <td width="30" valign="top" bgcolor="#ffffff" style="border-top: none; border-bottom: 1px solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding-top: 0cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0.19cm">
+                    <p>14</p>
+                </td>
+            </tr>
+            </tbody></table>
+        </center>
+    </div>
+</div>
+<script src="../js/ru/jquery-3.3.1.min.js"></script>
+<script src="../js/ru/menu.js"></script>
+<script src="../js/ru/header.js"></script>
+<script src="../js/ru/diagrams/raphael-min.js"></script>
+<script src="../js/ru/diagrams/morris.min.js"></script>
+<script src="../js/ru/state.js"></script>
+</body>
+</html>

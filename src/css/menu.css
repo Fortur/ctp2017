@@ -1,0 +1,76 @@
+.menu{
+    width: 493px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.menu-item{
+    display: flex;
+    align-items: center;
+    background: #25bfe9;
+    color: white;
+    height: 100px;
+    width: 466px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.tri{
+    position: relative;
+    left: -27px;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 27px solid #25bfe9;
+    border-bottom: 50px solid transparent;
+}
+.menu-item:hover {
+    background: #14679b !important;
+}
+.menu-item:hover .tri{
+    border-right: 27px solid #14679b;
+}
+.menu-item img{
+    width: 43px;
+    height: 43px;
+
+    margin-right: 10px;
+}
+.menu .active{
+    background: #2b3979;
+}
+.active .tri{
+    border-right: 27px solid #2b3979;
+}
+.submenu{
+    color: darkblue;
+    background: lightcyan;
+    display: none;
+    flex-direction: column;
+    width: 466px;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 5px;
+}
+.submenu-item{
+    margin-bottom: 10px;
+    width: auto;
+    padding-left: 90px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.submenu .active{
+    background: none;
+    color: black;
+}
+
+.upper{
+    display: block;
+    background: transparent;
+    width: 493px;
+    height: calc(100% - (110px * 16));
+}
+.upper:hover{
+    background: #efefef;
+    opacity: 0.5;
+}
