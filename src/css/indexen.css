@@ -1,0 +1,248 @@
+body{
+    background: none;
+}
+
+header{
+    height: 639px;
+    width: 100%;
+    background: url("../images/main_back.png")   no-repeat  center center ;
+    background-size: 100%;
+}
+.centered{
+    width: 1426px;
+    height: 639px;
+    margin-left: calc((100vw - 1426px) / 20);
+    overflow: hidden;
+    background: url("../images/back.png") no-repeat;
+}
+.back{
+    position: relative;
+    z-index: 5;
+    width: 1426px;
+    height: 693px;
+    top:-693px;
+    opacity: 0.5;
+    background: linear-gradient(to top right, #fff 100%, #fff 1%);
+}
+.rhomb{
+    background: blue;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    position: relative;
+    transform: rotate(45deg);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.rhomb div{
+    transform: rotate(-45deg);
+    width: 106px;
+    height: 106px;
+}
+.rhomb:hover{
+    transform: rotate(45deg) scale(1.5) ;
+    transition: transform 1s;
+    z-index: 3;
+}
+.no-hover:hover{
+    transform: rotate(45deg);
+
+}
+#rhomb1{
+    width: 400px;
+    top: 100px;
+    left:-150px;
+    background:  #71bde6;
+}
+
+#rhomb2{
+    left: 180px;
+    top: 150px;
+    background: #3e6798;
+}
+#rhomb2 div{
+    background:  url("../images/en/prilozh.png") no-repeat center center;
+}
+#rhomb3{
+    left:300px;
+    top: -125px;
+    background: #333c77;
+}
+#rhomb4{
+    left:420px;
+    top: -160px;
+    background: #ad9b92;
+}
+#rhomb5{
+    left: 540px;
+    top: -430px;
+    background: #4c7fbd;
+}
+#rhomb6{
+    left: 660px;
+    top: -705px;
+    background: #ad9b92;
+}
+#rhomb7{
+    left: 660px;
+    top:-620px;
+    background: #333c77;
+}
+#rhomb8{
+    left: 780px;
+    top: -895px;
+    background: #3e6798;
+}
+#rhomb9{
+    left: 900px;
+    top: -1170px;
+    background: #333c77;
+}
+#rhomb10{
+    left:900px;
+    top: -1085px;
+    background: #ad9b92;
+}
+#rhomb11{
+    left: 1020px;
+    top: -1360px;
+    background: #4c7fbd;
+}
+#rhomb12{
+    left:1140px;
+    top:-1395px;
+    background: #333c77;
+}
+#rhomb13{
+    left:1090px;
+    top: -2080px;
+    width: 490px;
+    height: 490px;
+    background: #71bde6;
+}
+#rhomb3 div{
+    background: url("../images/en/itog.png") no-repeat center center;
+}
+#rhomb4 div{
+    background: url("../images/en/subs.png") no-repeat center center;
+}
+#rhomb5 div{
+    background: url("../images/en/mechs.png") no-repeat center center;
+}
+#rhomb6 div{
+    background: url("../images/en/themes.png") no-repeat center center;
+}
+#rhomb7 div{
+    background: url("../images/en/about.png") no-repeat center center;
+}
+#rhomb8 div{
+    background: url("../images/en/key_vals.png") no-repeat center center;
+}
+#rhomb9 div{
+    background: url("../images/en/sost.png") no-repeat center center;
+}
+#rhomb10 div{
+    background: url("../images/en/vygody.png") no-repeat center center;
+}
+#rhomb11 div{
+    background: url("../images/en/aspects.png") no-repeat center center;
+}
+#rhomb12 div{
+    background: url("../images/en/keys_transp.png") no-repeat center center;
+}
+#rhomb13 div{
+    display: flex;
+    flex-direction: column;
+    width: 329px;
+    height: 80px;
+    position: relative;
+    left: -70px;
+    top:70px;
+}
+.top-line{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 15px;
+
+}
+.number{
+    font-size: 44px;
+    letter-spacing: 6px;
+    width: 120px;
+    display: block;
+}
+.bottom-line{
+    display: flex;
+
+    margin-top: 10px;
+}
+.language{
+    width: 120px;
+}
+.active{
+    color: white;
+}
+button{
+    background: url("../images/search.png") no-repeat center center, transparent;
+    border: none;
+    width: 10px;
+    height: 10px;
+}
+input{
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+    width: 109px;
+    padding-left: 6px;
+}
+::-webkit-input-placeholder {color:black;}
+::-moz-placeholder          {color:black;}/* Firefox 19+ */
+:-moz-placeholder           {color:black;}/* Firefox 18- */
+:-ms-input-placeholder      {color:black;}
+
+#logo{
+    position: relative;
+    background: url("../images/logo.png") no-repeat center center;
+    width: 384px;
+    height: 75px;
+    left: 83px;
+    top: 47px;
+}
+.links{
+    position: relative;
+    top: -1860px;
+    left: 74px;
+    display: flex;
+    justify-content: space-around;
+    width: 1278px;
+
+}
+.links b{
+    font-weight: bold;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+.links div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 185px;
+    font-size: 10px;
+}
+
+.partners{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    color: #416590;
+    font-weight: bold;
+}

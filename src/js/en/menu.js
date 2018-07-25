@@ -27,7 +27,7 @@ $('.menu').prepend('' +
         '<a href="/easyment" id="easyment" class="submenu-item">Usability of Reporting and Efficient Communication Channels with Stakeholders</a>' +
         '<a href="/iii" id="iii" class="submenu-item">The methods of the disclosure of the information by companies at the third level of transparency</a>' +
     '</div>' +
-    '<a href="/keys_transp" class="menu-item"><div class="tri"></div><img src="images/menu/key.png" alt="">Ключевые показатели прозрачности</a>' +
+    '<a href="/keys_transp" class="menu-item"><div class="tri"></div><img src="images/menu/key.png" alt="">Key indicators</a>' +
     //'<a href="/keys_report" class="menu-item"><div class="tri"></div><img src="images/menu/dia.png" alt="">Ключевые показатели отчетности</a>' +
     '<a href="/aspects" class="menu-item"><div class="tri"></div><img src="images/menu/list.png" alt="">Transparency aspects</a>' +
     '<div class="submenu">' +
@@ -42,8 +42,8 @@ $('.menu').prepend('' +
     '</div>' +
     //'<a href="/" class="menu-item"><div class="tri"></div><img src="images/menu/file.png" alt="">Существенные темы доклада</a>' +
     '<a href="http://corptransparency.ru/rate/" class="menu-item" target="_blank"><div class="tri"></div><img src="images/menu/chemodan.png" alt="">Итоговый рейтинг</a>' +
-    '<a href="/subs" class="menu-item"><div class="tri"></div><img src="images/menu/apply.png" alt="">Субрейтинги и субренкинги</a>' +
-    '<a href="/apply" class="menu-item"><div class="tri"></div><img src="images/menu/file.png" alt="">Приложение</a>' +
+    '<a href="/subs" class="menu-item"><div class="tri"></div><img src="images/menu/apply.png" alt="">Subratings and subrankings</a>' +
+    '<a href="/apply" class="menu-item"><div class="tri"></div><img src="images/menu/file.png" alt="">Annex</a>' +
     '<a href="/#top" class="upper"></a>');
 
 $('.menu-item').each(function () {
