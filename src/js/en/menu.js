@@ -11,7 +11,7 @@ $('.menu').prepend('' +
     '<a href="/state" class="menu-item"><div class="tri"></div><img src="images/menu/eye.png" alt="">State of Corporate Transparency</a>' +
     '<div class="submenu"> ' +
         '<a href="/state" id="state" class="submenu-item ">Overall State of Corporate Transparency of the Largest Russian Companies</a> ' +
-        '<a href="/features" id="features" class="submenu-item">Subsection Specifics of Disclosure of Reporting Information by Companies of I-IV Levels of\n' +
+        '<a href="/features" id="features" class="submenu-item">Specifics of Disclosure of Reporting Information by Companies of I-IV Levels of\n' +
     '            Corporate Transparency</a> ' +
         '<a href="/transp_with_difference" id="transp-with-difference" class="submenu-item">Transparency of Companies with Different Forms of Incorporations</a> ' +
         '<a href="/transp_sectors" id="transp-sectors" class="submenu-item ">Corporate Transparency of Various Sectors of the Russian Economy</a> ' +

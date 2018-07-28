@@ -14,7 +14,7 @@ exports.getPage = (req, res) => {
 }
 
 exports.swapLang =(req,res) =>{
-    let lang = req.cookies.lang == 'ru' ? 'en' :'ru';
+    let lang = req.cookies.lang != 'en' ? 'en' :'ru';
     res.cookie('lang',lang);
     res.redirect('back');
 
