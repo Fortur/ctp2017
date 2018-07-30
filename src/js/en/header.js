@@ -1,12 +1,12 @@
 $('header').append('' +
     '<img src="images/logo_min.png" alt="" >\n' +
-    '<a href="http://corporatetransparency2017.ru" class="link">\n' +
+    '<a href="/index" class="link">\n' +
         '<img src="images/home.png" alt="" width="43" height="43">\n' +
-         '<p>НА ГЛАВНУЮ</p>\n' +
+         '<p>MAIN PAGE</p>\n' +
     '</a>\n' +
     '<a href="/steps" class="link">\n' +
          '<img src="images/info.jpg" alt="" width="43" height="43">\n' +
-         '<p>МЕТОДИКА ИССЛЕДОВАНИЯ</p>\n' +
+         '<p>RESEARCH STATEMENT\n</p>\n' +
     '</a>\n' +
     '<a href="/apply" class="link">\n' +
          '<img src="images/downloads.png" alt="">\n' +

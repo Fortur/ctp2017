@@ -16,7 +16,7 @@ $('.menu').prepend('' +
         '<a href="/transp_with_difference" id="transp-with-difference" class="submenu-item">Transparency of Companies with Different Forms of Incorporations</a> ' +
         '<a href="/transp_sectors" id="transp-sectors" class="submenu-item ">Corporate Transparency of Various Sectors of the Russian Economy</a> ' +
         '<a href="/corp_transp" id="corp-transp" class="submenu-item">Corporate Transparency and Investment Attractiveness of Major Russian Companies\t</a> ' +
-        '<a href="/system" id="system" class="submenu-item">Transparency of System-Forming Organizations in the Russian Federation </a> ' +
+        '<a href="/system" id="system" class="submenu-item">Transparency of Systemically Important Companies in the Russian Federation </a> ' +
         '<a href="/corp_transp_list" id="corp_transp_list" class="submenu-item">Corporate Transparency of the Major Listed Companies</a> ' +
     '</div>' +
     '<a href="/mechs" class="menu-item"><div class="tri"></div><img src="images/menu/mech.png" alt="">Transparency Mechanisms</a>' +
