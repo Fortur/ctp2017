@@ -1,146 +1,220 @@
 {
   "pages": {
-    "about": {
+    "search_page":{
+      "title_ru": "Поиск",
+      "title_en": "Search",
       "prev": "zaver",
+      "next": "about"
+    },
+    "about": {
+      "title_ru": "Общая информация",
+      "title_en": "About the Research",
+      "prev": "search_page",
       "next": "about_rrs"
     },
     "about_rrs": {
+      "title_ru": "О Российской Региональной Сети по интегрированной отчетности",
+      "title_en": "About Russian Regional Network on Integrated Reporting",
       "prev": "about",
       "next": "apply"
     },
     "apply": {
+      "title_ru": "Приложения",
+      "title_en": "Annex",
       "prev": "about_rrs",
       "next": "aspects"
     },
     "aspects": {
+      "title_ru": "Аспекты раскрытия информации",
+      "title_en": "Transparency aspects",
       "prev": "apply",
       "next": "business_model"
     },
     "business_model": {
+      "title_ru": "Раскрытие информации о бизнес-модели",
+      "title_en": "Disclosure of business model",
       "prev": "aspects",
       "next": "conclusions"
     },
     "conclusions": {
+      "title_ru": "Основные выводы",
+      "title_en": "Main Conclusions",
       "prev": "business_model",
       "next": "corp"
     },
     "corp": {
+      "title_ru": "Раскрытие информации о корпоративном управлении",
+      "title_en": "Description of Corporate Governance System",
       "prev": "conclusions",
       "next": "corp_transp"
     },
     "corp_transp": {
+      "title_ru": "Корпоративная прозрачность и инвестиционная привлекательность крупнейших российских компаний",
+      "title_en": "Corporate Transparency and Investment Attractiveness of Major Russian Companies",
       "prev": "corp",
       "next": "corp_transp_list"
     },
     "corp_transp_list": {
+      "title_ru": "Корпоративная прозрачность крупнейших листингующихся компаний",
+      "title_en": "Corporate Transparency of the Major Listed Companies",
       "prev": "corp_transp",
       "next": "corrup"
     },
     "corrup": {
+      "title_ru": "Раскрытие информации о деятельности в области противодействия коррупции",
+      "title_en": "Subsection Disclosure of Anti-Corruption Activities",
       "prev": "corp_transp_list",
       "next": "development"
     },
     "development": {
+      "title_ru": "Раскрытие информации о деятельности в области устойчивого развития",
+      "title_en": "Disclosure of information on the activities in the sphere of sustainable development",
       "prev": "corrup",
       "next": "disclosure"
     },
     "disclosure": {
+      "title_ru": "Раскрытие информации о стратегии и ее реализации",
+      "title_en": "Disclosure of the strategy and its implementation",
       "prev": "development",
       "next": "search_page"
     },
     "easyment": {
+      "title_ru": "Удобство использования отчетности и каналов оперативной коммуникации с заинтересованными сторонами",
+      "title_en": "Usability of Reporting and Efficient Communication Channels with Stakeholders",
       "prev": "disclosure",
       "next": "experts"
     },
     "experts": {
+      "title_ru": "Состав Экспертного совета",
+      "title_en": "Members of the Expert Council",
       "prev": "easyment",
       "next": "features"
     },
     "features": {
+      "title_ru": "Особенности раскрытия отчетной информации компаниями I-IV уровня корпоративной прозрачности",
+      "title_en": "Specifics of Disclosure of Reporting Information by Companies of I-IV Levels of Corporate Transparency",
       "prev": "experts",
       "next": "iii"
     },
     "iii": {
+      "title_ru": "Раскрытие информации о механизмах прозрачности компаниями III уровня прозрачности",
+      "title_en": "The methods of the disclosure of the information by companies at the third level of transparency",
       "prev": "features",
       "next": "iii2"
     },
     "iii2": {
+      "title_ru": "Раскрытие информации по аспектам компаниями III уровня прозрачности",
+      "title_en": "Subsection Disclosure of Transparency Aspects by Level III Companies",
       "prev": "iii",
       "next": "index"
     },
     "index": {
+      "title_ru": "Главная",
+      "title_en": "Main",
       "prev": "iii2",
       "next": "int"
     },
     "int": {
+      "title_ru": "Следование международным стандартам",
+      "title_en": "Compliance with International Standards",
       "prev": "index",
       "next": "keys_report"
     },
     "keys_report": {
+      "title_ru": "Ключевые показатели отчетности",
+      "title_en": "Key reports",
       "prev": "int",
       "next": "keys_transp"
     },
     "keys_transp": {
+      "title_ru": "Ключевые показатели прозрачности",
+      "title_en": "Key indicators",
       "prev": "keys_report",
       "next": "lead"
     },
     "lead": {
+      "title_ru": "Обращение руководителя РРС",
+      "title_en": "Address of the RRN Lead",
       "prev": "keys_transp",
       "next": "mechs"
     },
     "mechs": {
+      "title_ru": "Механизмы раскрытия информации",
+      "title_en": "Transparency Mechanisms",
       "prev": "lead",
       "next": "purchase"
     },
     "purchase": {
+      "title_ru": "Раскрытие информации о закупочной деятельности",
+      "title_en": "Disclosure of Procurement Activities",
       "prev": "mechs",
       "next": "report_period"
     },
     "report_period": {
+      "title_ru": "Раскрытие информации о деятельности организации в отчетном периоде",
+      "title_en": "Subsection Disclosure of company activities in the reporting period",
       "prev": "purchase",
       "next": "state"
     },
     "state": {
+      "title_ru": "Состояние корпоративной прозрачности крупнейших российских компаний",
+      "title_en": "State of Corporate Transparency of the Largest Russian Companies",
       "prev": "report_period",
       "next": "steps"
     },
     "steps": {
+      "title_ru": "Этапы исследования",
+      "title_en": "Research steps",
       "prev": "state",
       "next": "subs"
     },
     "subs": {
+      "title_ru": "Субрейтинги и субренкинги",
+      "title_en": "Subratings and subrankings",
       "prev": "steps",
       "next": "system"
     },
     "system": {
+      "title_ru": "Прозрачность системообразующих организаций РФ",
+      "title_en": "Transparency of Systemically Important Companies in the Russian Federation",
       "prev": "subs",
       "next": "system_way"
     },
     "system_way": {
+      "title_ru": "Системный подход к публичной отчетности",
+      "title_en": "Systemic Approach to Public Reporting",
       "prev": "system",
       "next": "table1"
     },
     "table1": {
+      "title_ru": "Рейтинг прозрачности секторов экономики",
+      "title_en": "юююююююююююююююююююю",
       "prev": "system_way",
       "next": "table2"
     },
     "table2": {
+      "title_ru": "Прозрачность системообразующих компаний в сравнении с другими группами компаний",
+      "title_en": "юююююююююююююююююююю",
       "prev": "table1",
       "next": "transp_sectors"
     },
     "transp_sectors": {
+      "title_ru": "Корпоративная прозрачность различных секторов экономики РФ",
+      "title_en": "Corporate Transparency of Various Sectors of the Russian Economy",
       "prev": "table2",
       "next": "transp_with_difference"
     },
     "transp_with_difference": {
+      "title_ru": "Прозрачность компаний с различной организационно-правовой формой",
+      "title_en": "Transparency of Companies with Different Forms of Incorporation",
       "prev": "transp_sectors",
       "next": "zaver"
     },
     "zaver": {
-      "title_ru": "Интерактивная аналитика",
-      "title_en": "Interactive analytics",
+      "title_ru": "Заверение отчетной информации",
+      "title_en": "Reported information assurance",
       "prev": "transp_with_difference",
-      "next": "about"
+      "next": "search_page"
     }
   }
 }
