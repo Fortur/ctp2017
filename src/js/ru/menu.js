@@ -42,7 +42,7 @@ $('.menu').prepend('' +
     //'<a href="/" class="menu-item"><div class="tri"></div><img src="../images/menu/file.png" alt="">Существенные темы доклада</a>' +
     '<a href="http://corptransparency.ru/rate/" class="menu-item" target="_blank"><div class="tri"></div><img src="../images/menu/chemodan.png" alt="">Итоговый рейтинг</a>' +
     '<a href="/subs" class="menu-item"><div class="tri"></div><img src="../images/menu/apply.png" alt="">Субрейтинги и субренкинги</a>' +
-    '<a href="/apply" class="menu-item"><div class="tri"></div><img src="../images/menu/file.png" alt="">Приложение</a>' +
+    '<a href="/apply" class="menu-item"><div class="tri"></div><img src="../images/menu/file.png" alt="">Приложения</a>' +
     '<a href="/#top" class="upper"></a>');
 
 $('.menu-item').each(function () {

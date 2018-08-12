@@ -12,11 +12,11 @@ $('header').append('' +
          '<img src="../images/downloads.png" alt="">\n' +
          '<p>ЦЕНТР ЗАГРУЗОК</p>\n' +
     '</a>\n' +
-    '<a href="http://corptransparency.ru/contacts" class="link">\n' +
+    '<a href="http://corptransparency.ru/contacts.html" class="link">\n' +
          '<img src="../images/list.png" alt="">\n' +
          '<p>ОБРАТНАЯ СВЯЗЬ</p>\n' +
     '</a>\n' +
-    '<a href="http://corptransparency.ru/contacts" class="link">\n' +
+    '<a href="http://corptransparency.ru/contacts.html" class="link">\n' +
          '<img src="../images/glasses.png" alt="">\n' +
          '<p>ЗАПРОСИТЬ ЭКСПЕРТИЗУ ОТЧЕТА</p>\n' +
     '</a>\n' +

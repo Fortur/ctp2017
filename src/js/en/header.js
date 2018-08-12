@@ -12,11 +12,11 @@ $('header').append('' +
          '<img src="../images/downloads.png" alt="">\n' +
          '<p>DOWNLOAD CENTRE</p>\n' +
     '</a>\n' +
-    '<a href="http://corptransparency.ru/contacts" class="link">\n' +
+    '<a href="http://corptransparency.ru/contacts.html" class="link">\n' +
          '<img src="../images/list.png" alt="">\n' +
          '<p>FEEDBACK</p>\n' +
     '</a>\n' +
-    '<a href="http://corptransparency.ru/contacts" class="link">\n' +
+    '<a href="http://corptransparency.ru/contacts.html" class="link">\n' +
          '<img src="../images/glasses.png" alt="">\n' +
          '<p>EXAMINATION OF THE REPORT</p>\n' +
     '</a>\n' +
