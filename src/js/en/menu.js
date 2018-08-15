@@ -41,7 +41,7 @@ $('.menu').prepend('' +
         '<a href="/iii2" id="iii2" class="submenu-item">Subsection Disclosure of Transparency Aspects by Level III Companies</a>' +
     '</div>' +
     //'<a href="/" class="menu-item"><div class="tri"></div><img src="../images/menu/file.png" alt="">Существенные темы доклада</a>' +
-    '<a href="http://corptransparency.ru/rate/" class="menu-item" target="_blank"><div class="tri"></div><img src="../images/menu/chemodan.png" alt="">Final rating</a>' +
+    '<a href="http://corptransparency.ru/rate/?year=2017+rate=0" class="menu-item" target="_blank"><div class="tri"></div><img src="../images/menu/chemodan.png" alt="">Final rating</a>' +
     '<a href="/subs" class="menu-item"><div class="tri"></div><img src="../images/menu/apply.png" alt="">Subratings and subrankings</a>' +
     '<a href="/apply" class="menu-item"><div class="tri"></div><img src="../images/menu/file.png" alt="">Annex</a>' +
     '<a href="/#top" class="upper"></a>');
