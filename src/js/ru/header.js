@@ -44,7 +44,6 @@ $('body').append('' +
     '<div class="partners">\n' +
     '        <p>Партнеры исследования:</p>\n' +
     '        <img src="../images/das.png" alt="">\n' +
-  '          <img height="50" src="../images/Logo_ASE.png" alt="">\n' +
   '        <img src="../images/nexia.png" alt="">\n' +
     '        <img src="../images/ines.png" alt="">\n' +
     '        <img height="50" src="../images/IILA.png" alt="">'+
